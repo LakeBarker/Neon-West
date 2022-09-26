@@ -105,6 +105,14 @@ function banditAction() {
     }
 }
 
+function checkHand() {
+    for (i=0; i<=5; i++) {
+        if (document.getElementById(`${h[i]}`).style.contains('none')) {
+            
+        }
+    }
+}
+
 function playCard() {   
     console.log(`Card ${this.id} Clicked!`)
     const winCon = document.getElementById('dropTarget')
@@ -166,10 +174,3 @@ document.addEventListener('DOMContentLoaded', function() {
     discardPile.innerText = 18 - `${drawDeck.length}`
 
 })
-
-// const playH0 = document.getElementById('h0').addEventListener("click", playCard);
-// const playH1 = document.getElementById('h1').addEventListener("click", playCard);
-// const playH2 = document.getElementById('h2').addEventListener("click", playCard);
-// const playH3 = document.getElementById('h3').addEventListener("click", playCard);
-// const playH4 = document.getElementById('h4').addEventListener("click", playCard);
-// const playH5 = document.getElementById('h5').addEventListener("click", playCard);
