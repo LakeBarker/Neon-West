@@ -37,7 +37,7 @@ main {
     width: 200%;
 }
 
-h1 {
+.title {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
@@ -47,6 +47,15 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%); */
 }
+.winMessage {
+    text-align: center;
+    font-size: 80px;
+    font-style: bold;
+    color: darkviolet;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
 #neon {
     text-align: center;
     font-size: 80px;
@@ -76,6 +85,8 @@ h1 {
     border: 1px solid gold;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    
 }
 
 .cardCounters {
