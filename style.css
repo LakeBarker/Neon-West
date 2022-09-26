@@ -1,0 +1,128 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 1000px;
+    min-height: 720px;
+    max-width: 1000px;
+    max-height: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 18.75% 62.5% 18.75%;
+    grid-template-rows: 10% 60% 30%;
+    font-family: 'Chakra Petch', sans-serif;
+    box-sizing: border-box;
+}
+
+.sprites {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    top: 10%;
+    width: 200%;
+}
+
+h1 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+#neon {
+    text-align: center;
+    font-size: 80px;
+    font-style: bold;
+    color: darkviolet;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#west {
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    color: crimson;
+    font-family: 'Rye', sans-serif;
+}
+
+#handDisplay {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 15%;
+    margin: 0 .8%;
+    border: 1px solid gold;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCounters {
+    display: flex;
+    height: 100%;
+    width:  50%;
+    border: 1px solid gold;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    transform: translate(50%, 0);
+}
+/* This was all made to hard-code locations for divs, instead I'm going to create a grid */
+/*.counters {
+    top: 0%;
+    left: 5%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    background-color: aqua;
+}
+
+#handDisplay {
+    display: inline;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    background-color: brown;
+    padding: 75px;
+    transform:  translate(-45%,-100%);
+    max-width: 720px;
+
+}
+
+#drawPile {
+    display: inline;
+    top: 100%;
+    left: 0%;
+    padding: 25px;
+    background-color: brown;
+}
+
+#discardPile {
+    position: relative;
+    display: inline;
+    top: 100%;
+    left: 100%;
+    background-color: brown;
+    padding: 25px;
+} */
