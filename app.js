@@ -107,6 +107,8 @@ function banditAction() {
 
 function playCard() {   
     console.log(`Card ${this.id} Clicked!`)
+    const winCon = document.getElementById('dropTarget')
+    winCon.style.display = 'hidden'
     if (this.classList.contains("Attack")) {
         cyBandit.health = cyBandit.health - 2
         console.log(`${cyBandit.health}`)
@@ -121,17 +123,15 @@ function playCard() {
                 // winMessage.innerHTML = 'Another Step Closer to the CEO...'
                 // winMessage.classList.add('winMessage')
                 // winCon.appendChild(winMessage)
-            } else {
-                
-                return cyBandit.health
-            }
+            } 
     } else if (this.classList.contains("Guard")) {
         pChar.health = pChar.health+ 4
         console.log(`${pChar.health}`)
     } else if (this.classList.contains("Reload")) {
         pChar.ammoCount = pChar.ammoCount+1
     }
-
+    banditAction()
+    this.style.display = 'none'
 }
 
 //for 500 iterations, this function will switch locations of cards in the deck at random, therefor shuffling it

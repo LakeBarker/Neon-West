@@ -58,14 +58,14 @@ main {
 
 #neon {
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
     font-style: bold;
     color: darkviolet;
     font-family: 'Chakra Petch', sans-serif;
 }
 #west {
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
     font-style: italic;
     color: crimson;
     font-family: 'Rye', sans-serif;
