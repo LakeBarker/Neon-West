@@ -1,3 +1,4 @@
+//Initializing all variables
 const crdTypes = ["Attack","Guard","Reload"]
 const atckValues = [1, 2, 2, 2, 2, 2, 2, 2]
 const grdValues = [1, 4, 4, 4, 4]
@@ -5,6 +6,7 @@ const reldValues = [1, 2, 2, 2, 2]
 const ammoDisp = document.getElementById('ammoDisplay')
 const healthDisp = document.getElementById('healthDisplay') 
 const pDeck = []
+let drawDeck = playerDeck()
 //create player character stats
 //First iteration not DRY, fixing with constructor function
 // pCStats = [
@@ -67,10 +69,10 @@ function playerDeck() {
     }
     return pDeck
 }
-//initialize a variable for our deck, then populate it with cards
-let drawDeck = playerDeck()
-shuffle(drawDeck)
-console.log(drawDeck)
+//test initialize of a variable for our deck, then populate it with cards
+// let drawDeck = playerDeck()
+// shuffle(drawDeck)
+// console.log(drawDeck)
 
 //function to call when cards need to be dealt to the player's hand
 function dealHand() {
@@ -85,7 +87,7 @@ function dealHand() {
         drawDeck.splice(0,1)
     }   
 }
-dealHand()
+// dealHand()
 //function to be called when the player clicks a card
 function playCard() {
 
@@ -103,3 +105,10 @@ function shuffle(pDeck) {
     }
 
 }
+
+//when page loads, a new deck is created and shuffled
+document.addEventListener('DOMContentLoaded', function() {
+    let drawDeck = playerDeck()
+    shuffle(drawDeck)
+    dealHand()
+})
