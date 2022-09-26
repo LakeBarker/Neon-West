@@ -1,6 +1,7 @@
 * {
     font-family: 'Chakra Petch', sans-serif;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     background-color: black;
     justify-content: center;
     align-items: center;
+
 }
 
 main {
@@ -31,6 +33,8 @@ main {
     position: relative;
     display: flex;
     z-index: 1;
+    top: 10%;
+    width: 200%;
 }
 
 h1 {
