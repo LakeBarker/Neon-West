@@ -37,7 +37,7 @@ main {
     width: 200%;
 }
 
-h1 {
+.title {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
@@ -47,16 +47,25 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%); */
 }
-#neon {
+.winMessage {
     text-align: center;
     font-size: 80px;
     font-style: bold;
     color: darkviolet;
     font-family: 'Chakra Petch', sans-serif;
 }
+
+
+#neon {
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+    color: darkviolet;
+    font-family: 'Chakra Petch', sans-serif;
+}
 #west {
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
     font-style: italic;
     color: crimson;
     font-family: 'Rye', sans-serif;
@@ -72,15 +81,19 @@ h1 {
     height: 100%;
     width: 15%;
     margin: 0 .8%;
+    background-color:magenta;
     border: 1px solid gold;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    
 }
 
 .cardCounters {
     display: flex;
     height: 100%;
     width:  50%;
+    background-color:magenta;
     border: 1px solid gold;
     justify-content: center;
     align-items: center;
