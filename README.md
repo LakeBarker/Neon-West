@@ -16,7 +16,7 @@ As the user I want to be able to....
 * See Ammo and Health of both my player character and enemies
 * Have a clear Win screen and Loss screen
 
-# Wire-Frames!
-[Menu](https://user-images.githubusercontent.com/112370685/192352123-4dab0fde-5d69-4de9-83b9-292daa860532.PNG)
+# Wire-Frames
+![Menu](https://user-images.githubusercontent.com/112370685/192352123-4dab0fde-5d69-4de9-83b9-292daa860532.PNG)
 ![Battle Screen](https://user-images.githubusercontent.com/112370685/192352170-7f8452d0-47eb-434f-8cd1-9ab5770bd89d.PNG)
 ![End Screen](https://user-images.githubusercontent.com/112370685/192352185-f557611e-184e-41b0-a529-233a5a1638ce.PNG)
